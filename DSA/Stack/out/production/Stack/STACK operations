@@ -1,0 +1,25 @@
+STACK
+*LIFO-->Last in First Out
+*FIFO-->First in First Out
+
+Operations used:
+==============================================================================================
+Push();-->insertion
+Pop();-->deletion
+Peak();-->top of the element
+Empty();
+==============================================================================================
+1.push()
+-------------------------------------------------
+top=-1;
+if(top==size)
+system.out.print("Stack full");
+else
+arr[++top]=val;
+
+2.pop()
+---------------------------------------------------
+if(top>0)
+return arr[top--]
+else
+System.out.print("Stack is Empty");

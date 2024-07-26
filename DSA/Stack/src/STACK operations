@@ -1,0 +1,62 @@
+STACK
+*LIFO-->Last in First Out
+*FIFO-->First in First Out
+
+Operations used:
+==============================================================================================
+Push();-->insertion
+Pop();-->deletion
+Peak();-->top of the element
+Empty();
+==============================================================================================
+1.push()
+-------------------------------------------------
+top=-1;
+if(top==size)
+system.out.print("Stack full");
+else
+arr[++top]=val;
+
+2.pop()
+---------------------------------------------------
+if(top>0)
+return arr[top--]
+else
+System.out.print("Stack is Empty");
+
+3.peak();
+---------------------------------------------------
+ top of the element in the stack
+
+
+ ======================================================================================================================
+ INFIX TO POSTFIX
+  ((A+B)*(C-D)/E^F)
+
+
+  SCANNING                                      STACK                                           POSTFIX
+
+  (                                               (
+  (                                              ( (
+  A                                              ( (                                                  A
+  +                                             ( ( +                                                 A
+  B                                             ( ( +                                                 A B
+  )                                               )                                                   A B +
+  *                                               ( *                                                 A B +
+  (                                             ( * (                                                 A B +
+  C                                             ( * (                                                 A B + C
+  -                                             ( * ( -                                               A B + C
+  D                                             ( * ( -                                               A B + CD
+  )                                             (* ( - )                                              AB +CD -
+  /                                             ( * /                                                 AB + CD - *
+  E                                             ( /                                                   AB + CD - * E
+  ^                                             ( / ^                                                 AB + CD - * E
+  F                                             ( / ^                                                 AB + CD - * EF
+  )                                             ( / ^ )                                               AB + CD - * EF ^ /
+========================================================================================================================
+  INFIX TO PREFIX
+  1. Reverse the question
+  2.Infix to post fix
+  3.Reverse the solution
+
+
